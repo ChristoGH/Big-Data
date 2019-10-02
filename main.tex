@@ -1,0 +1,299 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+
+% ge[utf8]{inputenc}
+% \usepackage[english]{babel}
+ 
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+
+
+\addbibresource{big_data.bib} 
+
+\title{Big Data}
+\author{christo Strydom}
+\date{October 2019}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Introduction}
+% Module 1 Big Data Fundamentals: Introduction
+
+Video material
+
+(The Great Hack, 2019)
+
+% https://www.youtube.com/watch?v=3eQzwaxqjoA
+% https://www.youtube.com/watch?v=Zr02fMBfuRA
+% https://youtu.be/8pHzROP1D-w
+% https://www.youtube.com/watch?v=AWPrOvzzqZk
+% https://www.youtube.com/watch?v=lz_kIDxbzGA
+% Introduction
+By the end of this module you should be able to:
+\begin{enumerate}
+	\item Define Data and Big Data
+	\item Describe the dimensions of Big Data
+	\item Know the elements of the Big Data ecosystem
+	\item Know how Big Data fits into the 4th paradigm shift.
+\end{enumerate}
+What is Data?
+To get to a definition of Big Data it is worthwhile to contemplate around what constitutes �data�f  Here is one definition, found at  \cite{Ach89}
+information, especially facts or numbers, collected to be examined and considered and used to help decision-making, or information in an electronic form that can be stored and used by a computer.
+At the end of this course we will have the tool to critique this definition.  Data is pretty much our summary view of our world[SM2].  Data is recorded facts, recorded by any means we could.  The �data� at our disposal presents to two problems.  It is what we chose to record.  Even worse, we are often presented with data which is what other chose to collect.  If that is not enough, data is limited by what we can record.  Historically we would have recorded data on stone, wood, papyrus, etc.  Because of the skill and availability of an adequate recording medium, a limited number of people could record anything at all[SM3].  The invention of paper made writing and recording data much easier, and gave anyone who could master writing and had access to paper the ability to store data.  �Those in power write the history, while those who suffer write the songs.�? Frank Harte.  At least their version of history.  Extending this quote, it can be said that those who have the means to write (record data!) writes history.  In times gone by it may be said that those who could write, wrote history, i.e. only their version of events was recorded. 
+The longevity of data has always been an issue[SM5], (Morgan, n.d.).  Detail recorded on the sand of a beach below the high tide mark has a lifespan of only a few hours.  Detail on wood and rock is tedious to duplicate and exposed to the elements unless kept at optimal conditions.  Even then it is difficult to duplicate and carry around.  Paper[SM6], as a means of storing data, is much easier to keep and much easier to copy, but it suffers from the elements, and unless it is carefully kept, it will have a limited lifespan.  In module two we will differentiate between data and information. For our purposes, data is recorded facts, which is raw and up to that point unused.
+We can turn everything into data.  Even the words of a beautiful poem can be tallied up to reveal patterns and sentiment.  We can even verify the author by datafying the content!  Emotion can be measured.  Emotion leaves a trace in our brains and on our face, all of which can be recorded, stored and analysed.
+
+What is Big Data?
+Big Data is one of the mega trends of our time, (Marr, n.d.)
+Explosive development in technology gave rise to faster collection, better and bigger storage, faster retrieval and much faster analytics.  These developments have drawn in the sharpest minds to perpetuate this virtuous [SM7][SM8]cycle.  It is an exciting time to be in this space.  Technology has connected our thinking and ideas and our output via the internet, safe to say in ways like never before.
+If data is the way we view the world, then Big Data provides us with a very high definition picture, revealing detail beyond what the human eye can detect.   Data we use to collect resembles the grainy image from one of the early digital cameras.  Big Data reveals a picture which we can zoom into far longer before we start losing resolution.  It is an analogy and it has its limitations, yet there are so many limitations. 
+Our concept of data has changed, so much so that it has created a paradigm shift of sorts, which is best described by renaming the very construct we work with.  We work with data that is so different to what traditionally was known by data that it has earned the right to new name � Big Data.  And being a Big Data scientist sounds so much cooler!
+The concept of Big Data and the technologies that it spawned (and was spawned by), promises to reshape the world as we know it in our time, (Mayer-Sch�nberger, 2013). By 2019 it has already delivered on promises we did not even anticipate as few as little as five years ago.  It enables cross-cultural communication, protects natural resources, and discovering drugs and treatments that will revolutionise medicine,  (Hey, 2009). It promises to be part of a revolution that will allow humans to focus on activities we are best suited for as opposed to fulfilling tasks where we are dumbed down automatons.   All of us want to be on this journey and no one wants to be left behind.  It is reasonable to say that future employment will in many spheres be driven more and more by the advances centred around the full value chain of Big Data � collection, storage, value extraction and implementation. [SM9]See here for instance, (Marr, 2015)   Big Data is at the centre of the move to data-driven-everything rather knowledge driven anything, (Kitchin, 2014)
+Big Data is an exciting topic!  It is NOT about mountains of data�  there is a penny-dropping moment, a paradigm shift if you will, and I hope it happens for you.  It is about �getting� the concept, which is, in my experience, not a common event.  It will not necessarily happen by reading popular material in a cursory manner and glancing at LinkedIn posts. 
+Let�s start with some revelations to keep in mind.  Big Data is first a paradigm shift,  (Hey, 2009). It is not a continuation of traditional or �small� data.  Big Data doesn�t scale like that, just as a paradigm shift does not happen in due course.  It is, however, fast becoming a key milestone in the long path of human endeavour.  Yes, it is sitting very close to the edge of human progress, (Cukier, 2013)  Now there is a bold statement!  [SM12]I would even contend that [SM13]the 2012 statement:  �Big Data is less about data that is big than it is about a capacity to search, aggregate, and cross-reference large data sets� see (Boyd, 2012)  is a much closer definition of Big Data than most others.  Although it does not describe Big Data fully, but probably closer to the mark in arriving at a definition of Big Data: �(Big Data) not only refers to very large data sets and the tools and procedures used to manipulate and analyse them, but also to a computational turn in thought and research�, (Burkholder, 1992)
+ �In other words, Big Data analytics enables an entirely new epistemological approach for making sense of the world; rather than testing a theory by analysing relevant data, new data analytics seek to gain insights �born from the data��  In (Kitchin, 2014), an excellent bench mark paper and one I implore you to read, it explores and discusses the significant mind-set change around Big Data.  This is at the heart of why Big Data offer so much more.   Data now offers the opportunity, instead of testing a theorem against data, collected to for the test only the theorem under investigation but allows us to gain insights 
+
+� "Big data is at the foundation of all of the megatrends that are happening today, from social to mobile to the cloud to gaming."- said Chris Lynch, the ex-CEO of Vertica. 
+� �Information is the oil of 21st�century, and analytics is the combustion engine�- said Peter Sondergaard, Gartner Analyst 
+� �Hiding within those mounds of data is knowledge that could change the life of a patient or change the world.�- Atul Butte, Stanford
+Big data is a term that describes the large volume of data � both structured and unstructured � that inundates a business on a day-to-day basis. But it�s not the amount of data that�s important. It is what organisations do with the data that matters. 
+
+The fourth industrial revolution
+The fourth industrial revolution has become a popular catch-phrase for the rapid changes we see around us, especially the way we work.  It is what is referred to as a mega trend of which Big Data is an integral part of.  Often Big Data, AI and the fourth industrial revolution is mentioned almost always in the same context.  4IR as it has become known, has found wide-scale acceptance.   Here are some very worthwhile references.  Bear in mind that there is a phenomenal growth in publications expanding on the concept of 4IR, some very insightful, some less so and some simply sensationalist.  The best route is to stick to reputable sources where possible, (Schwab, 2017), (Bloem, 2014.), (Anon., 2019)
+Being called the fourth industrial revolution is that we have undergone three distinct industrial revolutions to bring us to this point. 
+The first industrial revolution saw the advent of steam, water and mechanical production equipment.  This stage of rapid development, 1760 to 1830, in industry was largely confined to England but due to the immense benefits achieved confinement of the huge advances found during period could not be maintained and know-how and skills spread into mainland Europe.[SM26]
+The characteristics of Big Data[SC(27]
+In an attempt to understand Big Data, and appreciate its context in the 21st century, it is helpful to turn to some of the mainstream characteristics that sets it aside.  Almost without fail any discussion around Big Data will somewhere touch on what has become known as the V�s of Big Data.  This is the go-to definition when the concept of Big Data is hazy.  Originally there were only three V�s, see for instance the very well-known and often quoted definition by Gartner (2001): �Big data is data that contains greater variety arriving in increasing volumes and with ever-higher velocity�. 
+Although it is not a pragmatic or complete definition of the concept of Big Data, it is useful to cover this ground simply because it is referred to so often.
+This description of Big Data was soon expanded to include the V of Value, especially when seen in a business context.  
+For brevity we will stick to four - you are welcome to add your own.  At last count 42 V�s have been identified.  Our V�s include:
+* Velocity
+* Variety
+* Volume
+* Value
+
+Here is an infographic summarizing the 4 Vs.  The image is from 2015 and the numbers slighly dated but the ideas remain as valid as ever:
+
+ 
+
+Velocity
+Data is being generated QUICKLY.  It comes at us at speed.  According to my calculations all ever-recorded data DOUBLES approx. every 2 years!  Whilst there must be a fundamental reason for this doubling effect, the expansion in data shows striking similarities with the rate of growth in transistor count on integrated chips, commonly known as Moore�s law, see here for instance:
+(Commons.wikimedia.org., 2019)
+The effect of Moore�s law is best depicted in this striking graph below (note the log scale on the left!): 
+
+
+
+
+The chart above refers to density of transistors on integrated circuits (ICs).  On face value Moore�s Law may appear to have little to do with Big Data.  However, it has everything to do with Big Data.  Faster processing power (tightly coupled with the measure of transistors on ICs) means we can process more data in the same unit of time.  But this development has seeped into all technology around us.  Faster collection technology ultimately means more data arriving at us in the same time frame.  This is faster data without even considering that data collection technology, benefitting from smaller and faster ICs had become cheaper and hence more ubiquitous.  High velocity data needs to be captured quickly and stored quickly.  Ultimately such data means nothing if it cannot be accessed and analysed quickly too. Unstored data may clog up collection queues, exhaust capacity and hence break a system, which in turn may lead to irreversible and expensive data losses. Data losses are damaging because some data presents unique opportunities, affording the owner a competitive advantage. A good example is CCTV footage. Clickstream data or web data is another.  Often the usefulness of such data is not immediately apparent[SM28].   
+Here is a very insightful link on the volume of data we face and the growth in volume.
+(Forbes.com, 2019)
+Velocity of data is a corner stone of what we understand to be Big Data.  But as we shall see, velocity challenges traditional data solutions like never before.  It makes our traditional batch processing model obsolete and asks for innovative thinking.  Just think about it, if traditional data represents a snapshot image, streaming data represents a video.  Changes in images become another dimension, difficult to exploit in standard data solutions and difficult to see or exploit.
+Variety
+Data is no longer well defined any more, hence the concept of variety.  Variety in Big Data is the emergence of unstructured data.  We receive data from many different sources and suffice to show the variety of source are not going diminish.  Why should it? Sometimes the data is the same record saying the same thing but, because of the source, the underlying data may look different and require different treatment.  Because of the human condition of competitiveness and curiosity we are intrinsically wired to fathom the value in variety.  Accounting, auditing and financial reporting data was previously the driver behind data and storage.  Financial data could be easily shaped in tabular form where the contents of each column was predefined by data type, knowing that the type of data one deals with will always retain the same number of columns and the same type, such as string or integer or floating decimal.  
+Big Data variety originates primarily from text, audio, image and video.  But none of these can be standardized at source! How can it be, new inventions in all four of these are hardly ever bound by convention?  In these four are locked up so much of what is the 4IR.
+ Face recognition and face identification, (two very different concepts!) gave rise to a range of new and incredible tools which served to strengthen research into what is now known as deep learning.
+ The tools around face recognition has matured tremendously and a search on Google Scholar for instance reveal the extent of very current work in this field, here is a interesting example Parkhi, O.M., Vedaldi, A. and Zisserman, A., 2015, September. Deep face recognition. In�bmvc�(Vol. 1, No. 3, p. 6). We will have more to say about deep learning in the last module of this course.  [SM29]
+ Video brings a new dimension and adds to the variety of data and Big Data in particular: whereas images reveal a static state it reveals nothing about the state prior the image or the consequent states, sequential changes reveal new information see for instance this not so simple example: Liu, Y. and Wang, X. (2011). Human Gait Recognition for Multiple Views.�Procedia Engineering, 15, pp.1832-1836.  , and contrast it with face recognition.
+ Text has become a VERY useful feature and a source of deep insight.  A lot of effort has gone into text mining.  One use is to give clients the look and feel of a human being over instant messaging.  It could also be used to gauge sentiment.  Consider the following reference for one example of very interesting work done with text:  Majumder, N., Poria, S., Gelbukh, A. and Cambria, E., 2017. Deep learning-based document modeling for personality detection from text. IEEE Intelligent Systems, 32(2), pp.74-79.
+ Sound bites bring new value, as do voice recordings!  If an instant messaging environment is one of unstructured data, then voice recording is another.  Of course, it does not mean that sound bites cannot be stored in a relational database.  Here as way of an example is astonishing results based on work done with voice recordings:  Fang, S.H., Tsao, Y., Hsiao, M.J., Chen, J.Y., Lai, Y.H., Lin, F.C. and Wang, C.T., 2018. Detection of pathological voice using cepstrum vectors: A deep learning approach.�Journal of Voice.
+Volume
+I purposely put volume down the list, because contrary to popular belief, Big Data is less about lots of data than what the name suggests.
+Forbes.com. (2019).�How Much Data Do We Create Every Day? The Mind-Blowing Stats Everyone Should Read. [online] Available at: https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#138fb9d960ba [Accessed 17 Jul. 2019].
+If we do wish to look at (out of date and irrelevant!) numbers around modern data, we don�t have to look very far.  What is astonishing about figures published around the size of data we are exposed to, is how quickly these figures become dated.  Even forecasts become irrelevant almost as soon as they appear.  Here is a recent infographic that reveals some insights into the volume of data out there and then where it originates from. 
+These and similar numbers abound in all popular texts and are out of date almost as fast as they appear, due to the very nature of technology and the world we live in.  Almost the only purpose these figures serve, is to estimate when it was published! 
+Value 
+Value was found in Big Data volume, and it created a new gold rush of sorts.  No wonder data is referred to as the new oil!  The value of Big Data is one of the foremost reasons why we collect and store data on a phenomenally increasing scale.  Big Data has been embraced by almost every industry out there.
+The true and unmistakable value of Big Data is manifold, here are some key areas.  This list is also incomplete, and you are welcome to [SM34]add your own list of areas of value.
+In business and industry, it can be translated into competitive advantage. 
+In science it is progress.
+In government it is accountability, transparency, efficiency and security and 
+In education it is advancement and upliftment.
+In healthcare it is well-being and prolonged quality of life.
+The societal benefits of Big Data are far and wide[SM35].  
+Consider the following 5 value metrics:
+Transparency
+Analysing Big Data and allowing it to influence decision making brings a greater level of scientific approach to areas in business that can easily become very subjective.  The analysis from Big Data spans the entire business or enterprise.  The results of such analysis become documentable and repeatable and verifiable.  It can be audited and tested.  Producing such results leave no place to hide and will leave shareholders (some at least!) with a greater level of comfort.
+Data driven discovery
+Discovery drives the human spirit.  Enterprises that foster and encourage discovery finds it easier to attract people with such mindsets. The search for new and better ways of doing things can spill over and rub off on stale mindsets.
+Customization
+The search for value and direction in research and strategy can be coupled and augmented by the output of findings of Big Data analytics.   Tailoring client product is one such endeavour.  Business becomes more focussed and research becomes more targeted.  The value of customization can be measured and a value can be placed on such effort.  One way to justify the expenditure on infrastructure and skill.
+
+Automation
+Automation was controversial in any stage of the industrial revolution, and none less so as in 4IR. Job losses and unemployment is a real fear.  The counter argument is that AI built on Big Data replaces what human are not ordinarily good at.  Humans get tired and make mistakes.   Think for a moment about self-driving vehicles.  This is a development that is unfolding before our very eyes.  Driving a vehicle in traffic can be a very tedious and repetitive task.  It requires focus and concentration.  The consequences of a mistake can be dire.  The question however is should we allow models to oversee a machine that can so easily kill its human occupants and others.  The question can be rephrased to ask if we should allow humans to drive given the number of fatalities on our roads?  
+Do the advances that automation bring improve the plight of all humans?
+Have we ever been able to stop the advances of technology to protect employment? 
+Innovation
+Big Data innovation has reached many spheres of business.  In banking understanding a client better allow for deeper insight into fraudulent transactions on an unsuspecting clients account.  In some ways the clients stand to benefit from deeper insight as banks seek to offer a better experience to their clients.  Better credit scoring allows banks to forego losses and should (in theory at least!) by virtue of being in a competitive field pass such improvements on to the end user.  Big Data allows for more efficient marketing campaigns.
+Big Data: the fourth paradigm shift[SM40]
+
+https://www.methodspace.com/big-data-often-flips-scientific-method-on-its-head-thats-bad/
+The fourth paradigm shift is explained comprehensively in (Hey, 2009).  I think the 4 paradigm shifts are very closely related to the industrial revolutions.  The mindset change of the paradigm shifts discussed earlier and may each in turn have preceded a revolution in industry.  Seeing such changes in science may allow an observer to anticipated changes in industry.  The fourth paradigm shift is a shift on a grand scale and is on broad scale across many disciples if not all.  In it all we may experience micro shifts, pertaining to narrow disciplines but each causing a minor revolution.  All this is unsubstantiated and undocumented - material waiting to be explored in book or article form.
+Technology allowed science to employ new tools to collect more and different data, quicker.  The notion of the fourth paradigm shift is closely tied together with 4 ages of  science and methods in science.  Data has always been an integral part of science.  Because of increased networking this could be done remotely, and raw data and results shared over long distances.  Big Data is partly a driver of the 4th paradigm shift, but also increasingly a consequence.  Big Data and the tools that were developed around it has gifted us an opportunity to understand and confront the challenges we face in the 21st century.  These challenges range from fields and disciplines as diverse as healthcare education, energy and the environment.  Feel free to add any number of challenges to this (growing) list. Almost anyone who has access to the internet will be conscious of the challenges we as modern human face.
+The paradigms below are admittedly loosely defined and demarcated but serves to put the current era of machine learning, Big Data and AI in clear context.
+� The first paradigm: This is the age of experimental science, also known as the age of empiricism.  During this period, we learnt to describe the natural phenomena around us, roughly around the pre-Renaissance period.  Evidence-based science developed, empirical science became, and still is, the cornerstone of the scientific method.
+� The second paradigm: This paradigm is the age of theoretical science, age of modelling and generalisation, pre-computers.
+� The third paradigm: This is the age of computational science.  During this period, we used computing power to simulate complex phenomena. Computers started being used to augment scientific discovery and to aid in our understanding of the world around us. This is also the pre-Big Data age:  storage and connectivity as well as software leveraging infrastructure did not yet allow for the jump to what is now known as Big Data. Artificial Intelligence, Machine Learning needed further development to leverage off faster and bigger data.
+� The fourth paradigm shift encompasses the age of data-intensive statistical exploration and that of data mining leveraging hardware and software in ways.  Connectivity through means of high-speed internet has increased dramatically.  Connectivity has fuelled scientific research because of better and faster data collection especially during this age of the internet.  The fourth paradigm is the 
+The fourth paradigm is a controversial topic.  Without a doubt there is an emergence of very powerful means to extract and interpret value from large datasets.  Our understanding of the world arounds is increasingly locked up in the workings of a machine learning model.  To explore such notions, one may need to explore the use of machine learning in basic research, especially in fields where peer review and the standards of the scientific method is still held at the foundation of the discipline.
+The internet is awash with opinion on every matter that reaches the public eye.  Unfortunately, there is little to qualify and dispel erroneous opinion.  Sensational and controversial opinions are typically the ones that reaches viral status and acceptance as fact.  With faster internet we are bombarded with more unqualified opinion.  Big data requires more discernment.  
+Big Data: three periods of data[SM41]
+The history of data and Big Data is a fascinating one!  Unfortunately to do its history appropriate justice is completely beyond the scope of this scope.  It is so very much part of human history; it is fundamentally part of our quest to survive, promote well-being and pursue a long(er) life by exploring and research and implementing medicine, to prosper (business), to understand the world we live in (science) and to govern and maintain societal order.
+An interesting presentation of this journey is divided approximately into:
+* Early data 
+* Into the 20th Century
+* The 21st Century
+Big Data: early data[SM42]
+The way we interact with data can be traced back a surprisingly long time ago. Palaeolithic tribespeople where found to have marked notches into sticks and bones and to have kept track of trading activity or supplies[SM43] and to have predicted how long their food supplies would last.
+Recording of data was arguably largely connected with agriculture, trade and science.  These three endeavours often overlapping still contain our biggest reasons for recording and storing data, (Temin, 2002.) 
+ For a surprising and insightful tour of data in ancient Egypt read Ancient Records of Egypt, read  (Breasted, 1906)
+
+Abacus
+The abacus can be equated to a very early form of computation device, designed to aid in doing arithmetic, again most likely it was applied in trade.  
+
+Believe it or not, the abacus is a means to storing data, and surprisingly big numbers at that.  Of course, it is fleeting storage, like the RAM we are familiar with.  This is tiny storage, tiny by today�s standards, (only a few bytes at a time) but data storage nonetheless.
+ First libraries and mass data storage
+The Library of Alexandria
+This library also known as the Great Library of Alexandria and at its peak considered to have contained pretty much all human knowledge in written form.  It was the result of due largely to the Ptolemaic kings' aggressive and well-funded policies for procuring texts. Pretty impressive and very much like our modern-day internet.
+  Antikythera Mechanism
+� Richard Millar Devens, 1865:
+ Encyclopaedia of Commercial and Business Anecdotes:
+ Henry Furnese achieved a competitive business advantage by using data!
+ keep track of trading activity or supplies, 
+ predict how long their food supplies would last.
+� Herman Hollerith 1880:
+ The development of statistics,
+ Hollerith Tabulating Machine
+ completes 10 years� work in three months
+ found what will become IBM
+� 1928- Fritz Pfleumer:
+  invents a method of storing information magnetically on tape. This method is still in use!
+� 1937 - Franklin D. Roosevelt:
+ Social Security Act
+ Keep track of 27 million tax payers and 
+ 3 million employers
+� 1943 -�Colossus:
+ Brings together ingenuity and resolve under pressure.
+ This �computer� could see characters at a rate of 5,000 per second.
+Big Data: the 20th century
+� 1952 - National�Security�Agency (NSA):
+ 12.000 cryptologists!
+ information overload during the Cold War.
+ collect and process intelligence signals automatically.
+� 1965 - United Stated Government, the first data centre:
+ 742m tax returns and
+ 75 million sets of fingerprints�
+ This project was dropped because of privacy fears.
+� 1989 Tim Berners-Lee�and the internet:
+  sharing of information via a �hypertext� system
+� 1995 -�Super computer:
+ 30,000 years of human calculations in a second.
+Big Data: the 21st  century
+
+� 2005. �Roger Mougalas coined the term Big Data
+ Hadoop,Yahoo, Google�s�MapReduce.
+ Web 2.0
+� 2007. The End of Theory: The Data Deluge Makes the Scientific Model Obsolete (?)
+� 2008. 14.7 exabytes of new information are produced this year.
+� 2010. �Eric Schmidt at Techonomy conference in Lake Tahoe in California: 
+ 5 exabytes of data since the dawn of civilization until 2003, now 5 exabytes per day!
+� 2011. McKinsey report:�The next frontier for innovation, competition, and productivity:
+ states that in 2018 the USA alone will face a shortage of 140.000 � 190.000 data scientists as well as 1.5 million data managers.
+� 2014: 
+ people using mobile devices to access digital data surpasses those using office or home computers. 
+88% of business executives report big data analytics is a top priority. 
+Summary
+Much of the background of Big Data is simply beyond the scope of this course.  Perhaps this introduction lifted the lid of what is a fascinating subject and will continue to set the tone for the future of much of business and science as we know it.
+
+Anon., 2019. Encyclopedia Britannica. (2019). Industrial Revolution | Definition, Facts, & Summary. [online] Available at: https://www.britannica.com/event/Industrial-Revolution [Accessed 17 Jul. 2019]. [Online] 
+Available at: https://www.britannica.com/event/Industrial-Revolution
+[Accessed July 2019].
+Anon., n.d. Cambridge Dictionary. [Online] 
+Available at: https://dictionary.cambridge.org/dictionary/english/data
+Bloem, J. V, 2014.. The fourth industrial revolution.. s.l.:Things tighten.
+Boyd, D. a. C. K., 2012. Critical questions for big data: Provocations for a cultural, technological, and scholarly phenomenon.. Information, communication & society,, 15(5), pp. pp.662-679.
+Burkholder, L., 1992. Philosophy and the Computer.. Boulder: Westview Press.
+Cukier, K. a. M.-S. V., 2013. The rise of big data: How it's changing the way we think about the world.. Foreign Aff., Volume 92, p. p.28.
+Hey, A., 2009. The fourth paradigm: data-intensive scientific discovery.. 2009. ed. Redmond, WA: Microsoft research.
+Kitchin, R., 2014. Big Data, new epistemologies and paradigm shifts.. Big data & society., 1(1), pp. 1-12.
+Marr, B., 2015. Big Data: Using SMART big data, analytics and metrics to make better decisions and improve performance.. s.l.:John Wiley & Sons..
+Marr, B., n.d. Big Data as a Megatrend. [Online] 
+Available at: https://www.linkedin.com/pulse/20130827231108-64875646-big-data-the-mega-trend-that-will-impact-all-our-lives
+Mayer-Sch�nberger, V. a. C. K., 2013. Big data: A revolution that will transform how we live, work, and think.. s.l.:Houghton Mifflin Harcourt..
+Morgan, C., n.d. Data lifespan. [Online] 
+Available at: https://blog.storagecraft.com/data-storage-lifespan/
+Schwab, K., 2017. The fourth industrial revolution.. s.l.:Currency.
+The Great Hack. 2019. [Film] Directed by Jehane Noujaim Karim Amer. s.l.: Netflix.
+
+
+[SM45]	
+
+[SM1]Include the learning outcomes for this module:
+
+By the end of this module, you should be able to:
+[SM2]source
+[SM3]please rephrase for clarity � is �it� the stone, wood, etc?
+[SM4]highlighted sections: please be more specific in terms of period/time
+[SM5]source
+[SM6]confusing sentence here
+[SM7]
+[SM8R7]word choice?
+[SM9]source
+[SM10]source
+[SM11]Please add a brief introductory paragraph � introduce the module, give an overview, etc.
+[SM12]It is! Please provide a source ??
+[SM13]Word choice?
+ Rather �add�?
+[SM14]Is this a quote? Please add � � if necessary
+[SM15]Sentence starts strangely. Please rephrase to provide more clarity/context
+[SM16]Is there a more recent source?
+[SC(17R16]The quote is from this article though.  But it defines the concept well even though 7 years old already.
+[SM18]
+[SM19]Add more discussion/context here; we need to avoid having only direct quotes
+[SM20]Add more discussion/context here; we need to avoid having only direct quotes
+[SM21]Is this a source? Please format correctly
+[SM22]Is this a source?
+[SM23]Incomplete sentence
+[SM24]Is this a source? What for? Or is it an additional reading?
+[SM25]Incomplete sentence, add source
+[SM26]More information to come re: revolutions?
+[SC(27]
+[SM28]Add some sources here, please
+[SM29]More here?
+[SM30]Unclear sentence
+[SM31]Please rephrase for easier reading
+[SM32]Sourced? Collected?
+[SM33]Where?
+[SM34]Incomplete sentence
+[SM35]Add more discussion here, putting these Vs into context
+[SM36]This section should be more discursive, more narrative
+[SM37]Great source! Please do also provide a paraphrased discussion/definition
+
+
+Please also cite correctly, and differentiate between sources � are there 2 here?
+[SM38]Confusing formatting for analogy section
+[SM39]Too many bullet points, this should be in a paragraph and expanded on
+[SM40]More discussion � this is very interesting subject matter!
+[SM41]More discussion
+[SM42]More discussion
+[SM43]Fascinating history, images would be great here!
+[SM44]source
+[SM45]Add a conclusion for the module
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
